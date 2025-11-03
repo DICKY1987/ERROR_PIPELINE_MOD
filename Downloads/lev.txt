@@ -1,0 +1,77 @@
+Name:	Ethernet
+Description:	Intel(R) Ethernet Connection (7) I219-LM
+Physical address (MAC):	e8:6a:64:eb:c8:22
+Status:	Operational
+Maximum transmission unit:	1500
+Aggregated link speed (Receive/Transmit):	1000/1000 (Mbps)
+DHCP enabled:	Yes
+DHCP servers:	192.168.40.1
+DHCP lease obtained:	‎Sunday, ‎November ‎2, ‎2025 2:18:27 PM
+DHCP lease expires:	‎Monday, ‎November ‎3, ‎2025 2:18:27 AM
+IPv4 address:	192.168.40.172/24
+IPv6 address:	fe80::8c37:9e78:a90f:6713%13/64
+IPv4 default gateway:	192.168.40.1
+DNS servers:	192.168.40.1 (Unencrypted)
+DNS domain name:	lan
+DNS connection suffix:	lan
+Network name:	Network
+Network category:	Public
+Connectivity (IPv4/IPv6):	Connected to Internet / Connected to unknown network
+Name:	Wi-Fi
+Description:	Intel(R) Wireless-AC 9560 160MHz
+Physical address (MAC):	48:89:e7:b3:61:68
+Status:	Not operational
+Maximum transmission unit:	1500
+IPv4 address:	169.254.202.65/16
+IPv6 address:	fe80::5dfb:9206:9c8:f815%6/64
+DNS servers:	fec0:0:0:ffff::1%1 (Unencrypted)
+fec0:0:0:ffff::2%1 (Unencrypted)
+fec0:0:0:ffff::3%1 (Unencrypted)
+Connectivity (IPv4/IPv6):	Disconnected
+Name:	Local Area Connection* 1
+Description:	Microsoft Wi-Fi Direct Virtual Adapter
+Physical address (MAC):	48:89:e7:b3:61:69
+Status:	Not operational
+Maximum transmission unit:	1500
+IPv4 address:	169.254.235.87/16
+IPv6 address:	fe80::d617:fda0:6ece:d5b9%17/64
+DNS servers:	fec0:0:0:ffff::1%1 (Unencrypted)
+fec0:0:0:ffff::2%1 (Unencrypted)
+fec0:0:0:ffff::3%1 (Unencrypted)
+Connectivity (IPv4/IPv6):	Disconnected
+Name:	Local Area Connection* 2
+Description:	Microsoft Wi-Fi Direct Virtual Adapter #2
+Physical address (MAC):	4a:89:e7:b3:61:68
+Status:	Not operational
+Maximum transmission unit:	1500
+IPv4 address:	169.254.50.17/16
+IPv6 address:	fe80::1f35:8ad:bcdb:b533%4/64
+DNS servers:	fec0:0:0:ffff::1%1 (Unencrypted)
+fec0:0:0:ffff::2%1 (Unencrypted)
+fec0:0:0:ffff::3%1 (Unencrypted)
+Connectivity (IPv4/IPv6):	Disconnected
+Name:	Bluetooth Network Connection
+Description:	Bluetooth Device (Personal Area Network)
+Physical address (MAC):	48:89:e7:b3:61:6c
+Status:	Not operational
+Maximum transmission unit:	1500
+IPv4 address:	169.254.108.14/16
+IPv6 address:	fe80::4f30:1688:8735:f4c3%18/64
+DNS servers:	fec0:0:0:ffff::1%1 (Unencrypted)
+fec0:0:0:ffff::2%1 (Unencrypted)
+fec0:0:0:ffff::3%1 (Unencrypted)
+Connectivity (IPv4/IPv6):	Disconnected
+Proxy Auto Detect:	On
+
+Aggregated link speed (Receive/Transmit):	1000/1000 (Mbps)
+Link-local IPv6 address:	fe80::8c37:9e78:a90f:6713%13
+IPv4 address:	192.168.40.172
+IPv4 default gateway:	192.168.40.1
+IPv4 DNS servers:	192.168.40.1 (Unencrypted)
+Primary DNS suffix:	lan
+Manufacturer:	Intel
+Description:	Intel(R) Ethernet Connection (7) I219-LM
+Driver version:	12.19.0.16
+Physical address (MAC):	E8:6A:64:EB:C8:22
+
+

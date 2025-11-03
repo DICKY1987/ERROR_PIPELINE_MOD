@@ -1,0 +1,67 @@
+# ======================================================================
+# File: config/workspace.hp-controls-lev.json   (Run from HP)
+# ======================================================================
+{
+  "Server": "192.168.40.172",
+  "RdpArgs": "/f",
+  "KeepCredential": false,
+  "AutoInstallModule": true,
+  "WindowWaitMs": 30000,
+  "PollIntervalMs": 300,
+  "WorkApps": [
+    "%ProgramFiles%\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE",
+    "%ProgramFiles%\\Microsoft Office\\root\\Office16\\EXCEL.EXE"
+  ],
+  "PersonalApps": [
+    "%ProgramFiles%\\Google\\Chrome\\Application\\chrome.exe",
+    "%LOCALAPPDATA%\\Spotify\\Spotify.exe"
+  ]
+}
+
+# ======================================================================
+# File: config/workspace.hp-controls-lev.yaml   (same, YAML form)
+# ======================================================================
+Server: 192.168.40.172
+RdpArgs: "/f"
+KeepCredential: false
+AutoInstallModule: true
+WindowWaitMs: 30000
+PollIntervalMs: 300
+WorkApps:
+  - %ProgramFiles%\Microsoft Office\root\Office16\OUTLOOK.EXE
+  - %ProgramFiles%\Microsoft Office\root\Office16\EXCEL.EXE
+PersonalApps:
+  - %ProgramFiles%\Google\Chrome\Application\chrome.exe
+  - %LOCALAPPDATA%\Spotify\Spotify.exe
+
+# ======================================================================
+# How to run (FROM HP laptop)
+# ======================================================================
+
+# 1) Optional: run unit tests (Pester v5+)
+Invoke-Pester .\tests\Setup-RdpWorkspaces.Tests.ps1 -Output Detailed
+
+# 2) Quick port check from HP → LEV (3389)
+Test-NetConnection 192.168.40.172 -Port 3389
+
+# 3) Start workspaces + RDP (will prompt for LEV creds)
+.\scripts\Setup-RdpWorkspaces.ps1 -ConfigPath .\config\workspace.hp-controls-lev.json `
+  -Credential (Get-Credential) -AutoInstallModule
+
+# YAML variant
+.\scripts\Setup-RdpWorkspaces.ps1 -ConfigPath .\config\workspace.hp-controls-lev.yaml `
+  -Credential (Get-Credential) -AutoInstallModule
+
+# ======================================================================
+# RDP prerequisites ON THE LEV DESKTOP (once)
+# ======================================================================
+
+# Enable Remote Desktop (requires admin; GUI: SystemPropertiesRemote.exe)
+# PowerShell alternative:
+Set-ItemProperty 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name fDenyTSConnections -Value 0
+
+# Allow RDP through Windows Firewall
+Enable-NetFirewallRule -DisplayGroup 'Remote Desktop'
+
+# Ensure your LEV user is allowed to RDP (add to Remote Desktop Users if needed)
+#   Control Panel → System → Remote settings → "Select Users..."
