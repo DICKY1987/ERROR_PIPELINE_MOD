@@ -1,0 +1,32 @@
+{
+  "run_id": "RUN-001",
+  "timestamp": "2025-01-01T00:00:00Z",
+  "file_in": "sample.txt",
+  "file_out": "sample_VALIDATED.txt",
+  "status": "processed",
+  "summary": {
+    "plugins_run": 2,
+    "total_errors": 1
+  },
+  "plugins": [
+    {
+      "plugin_id": "header",
+      "errors": [],
+      "metadata": {
+        "added_header": true
+      }
+    },
+    {
+      "plugin_id": "analysis",
+      "errors": [
+        {
+          "severity": "warning",
+          "message": "blank line detected"
+        }
+      ],
+      "metadata": {
+        "line_count": 4
+      }
+    }
+  ]
+}
