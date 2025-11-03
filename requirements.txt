@@ -1,0 +1,27 @@
+# Core Dependencies
+ulid-py==1.1.0              # ULID generation for run IDs
+python-dateutil==2.8.2      # Date/time utilities
+
+# GUI Dependencies
+tkinterdnd2==0.3.0          # Drag-and-drop support for Tkinter
+
+# Python Validators (optional - users install what they need)
+# Uncomment to include in base installation:
+# ruff==0.6.9               # Fast Python linter
+# black==24.8.0             # Code formatter
+# isort==7.0.0              # Import sorter
+# pylint==4.0.1             # Comprehensive linter
+# mypy==1.18.2              # Static type checker
+# pyright==1.1.407          # Microsoft type checker
+
+# Security Tools (optional)
+# bandit==1.8.6             # Python security scanner
+# safety==3.6.2             # Dependency security checker
+
+# Other Validators (optional)
+# yamllint==1.37.1          # YAML linter
+# codespell==2.4.1          # Spelling checker
+
+# Testing (development only)
+# pytest==8.4.2             # Testing framework
+# pytest-cov==5.0.0         # Coverage reporting
