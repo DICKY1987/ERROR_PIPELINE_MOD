@@ -1,0 +1,7 @@
+{
+  "name": "example_plugin",
+  "version": "1.0.0",
+  "description": "Demonstration plugin used to validate the discovery flow.",
+  "dependencies": [],
+  "entrypoint": "ExamplePlugin"
+}
